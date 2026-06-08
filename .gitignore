@@ -1,0 +1,22 @@
+# Local config and secrets
+.secrets
+config.json
+.env
+
+# Virtual Environment
+venv/
+env/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
