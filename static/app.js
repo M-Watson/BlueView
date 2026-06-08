@@ -31,8 +31,8 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
             userCredentials = { handle, password };
             messageDiv.textContent = data.message;
             messageDiv.className = 'success';
-            document.getElementById('login-section').style.display = 'none';
-            document.getElementById('catchup-section').style.display = 'block';
+            document.getElementById('nav-app-btn').style.display = 'inline-block';
+            navTo('app');
             const yesterday = new Date();
             yesterday.setDate(yesterday.getDate() - 1);
             document.getElementById('since').value = yesterday.toISOString().slice(0, 10);
